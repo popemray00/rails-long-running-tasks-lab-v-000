@@ -1,7 +1,7 @@
 <%= form_tag songs_upload_path, multipart: true do %>
-<%= file_field_tag :songs %>
-<%= file_field_tag :artists %>
-<%= submit_tag "Import Songs and Artists"%>
+<%= file_field_tag :songs.artist_name %>
+
+<%= submit_tag "Import Songs"%>
   <% end %>
 
 <ul>
